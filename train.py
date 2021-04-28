@@ -16,7 +16,7 @@ import mlflow
 import mlflow.sklearn
 
 mlflow.set_tracking_uri("http://10.1.0.20:5000")
-mlflow.set_experiment("eric_wine")
+mlflow.set_experiment("mlflow_tutorial")
 
 def eval_metrics(actual, pred):
     rmse = np.sqrt(mean_squared_error(actual, pred))
